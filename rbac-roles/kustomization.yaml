@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/frontend/sourcegraph-frontend.Role.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/frontend/sourcegraph-frontend.RoleBinding.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/prometheus/prometheus.ClusterRoleBinding.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/prometheus/prometheus.ClusterRole.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/cadvisor/cadvisor.ClusterRoleBinding.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/cadvisor/cadvisor.ClusterRole.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/cadvisor/cadvisor.PodSecurityPolicy.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/cadvisor/cadvisor.ServiceAccount.yaml

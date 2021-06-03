@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/redis/redis-store.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/redis/redis-cache.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/pgsql/pgsql.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/prometheus/prometheus.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/codeintel-db/codeintel-db.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/minio/minio.PersistentVolumeClaim.yaml
+  - https://github.com/sourcegraph/deploy-sourcegraph/raw/v3.28.0/base/codeinsights-db/codeinsights-db.PersistentVolumeClaim.yaml
